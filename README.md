@@ -10,8 +10,8 @@ O grafo analisado pertence à coleção *Collaboration Networks* do repositório
 
 * **Fonte:** [SNAP — ca-CondMat](https://snap.stanford.edu/data/ca-CondMat.html)
 * **Tipo de Grafo:** Não direcionado e originalmente não ponderado
-* **Vértices ($\vert{}V\vert{}$):** $23.133$ pesquisadores
-* **Arestas ($\vert{}E\vert{}$):** $93.497$ colaborações (coautorias)
+* **Vértices ($\lvert V \rvert$):** $23.133$ pesquisadores
+* **Arestas ($\lvert E \rvert$):** $93.497$ colaborações (coautorias)
 
 ---
 
@@ -33,12 +33,12 @@ tp-grafos/
 
 ### Parte I — Análise Estrutural
 
-Devido à existência de componentes desconectadas, as métricas de distância (diâmetro, raio e comprimento médio dos caminhos) foram computadas sobre a **Maior Componente Conexa (LCC)**, que concentra $92,35\%$ dos vértices da rede.
+Devido à existência de componentes desconectadas, as métricas de distância (diâmetro, raio e comprimento médio dos caminhos) foram computadas sobre a **Maior Componente Conexa (LCC)**, que concentra 92,35% dos vértices da rede.
 
 | Métrica Estrutural | Valor Obtido | Escopo |
 | :--- | :---: | :--- |
-| **Número de Vértices ($|V|$)** | $23.133$ | Grafo completo |
-| **Número de Arestas ($|E|$)** | $93.497$ | Grafo completo |
+| **Número de Vértices ($\lvert V \rvert$)** | $23.133$ | Grafo completo |
+| **Número de Arestas ($\lvert E \rvert$)** | $93.497$ | Grafo completo |
 | **Grau Mínimo ($k_{\min}$)** | $1$ | Grafo completo |
 | **Grau Máximo ($k_{\max}$)** | $281$ | Vértice *hub* (ID `73647`) |
 | **Grau Médio ($\langle k \rangle$)** | $8,0834$ | Grafo completo |
@@ -81,7 +81,7 @@ Para algoritmos de caminho mínimo ponderado (Dijkstra e Bellman-Ford), atribuiu
 
 * **Propriedade Small-World:** A rede apresenta coeficiente de clusterização médio ($C = 0,6334$) mais de três ordens de grandeza superior ao de um grafo aleatório equivalente, mantendo um comprimento médio de caminhos curto ($L = 5,3522$). Isso reflete grupos de pesquisa altamente coesos interligados por pesquisadores que atuam como pontes entre instituições.
 * **Lei de Potência (Scale-Free):** A distribuição de graus em escala log-log exibe comportamento decrescente característico de redes livres de escala, explicado pelo fenômeno de **ligação preferencial**, no qual novos pesquisadores tendem a colaborar com autores já consolidados (*hubs*).
-* **Robustez e Vulnerabilidade:** A rede é altamente resiliente à remoção aleatória de $5\%$ dos vértices (preservando a LCC), mas sofre fragmentação severa diante da remoção direcionada dos $5\%$ vértices mais centrais.
+* **Robustez e Vulnerabilidade:** A rede é altamente resiliente à remoção aleatória de 5% dos vértices (preservando a LCC), mas sofre fragmentação severa diante da remoção direcionada dos 5% vértices mais centrais.
 * **Aderência a Modelos Clássicos:** A topologia combina características do **Modelo de Barabási-Albert** (crescimento com ligação preferencial e cauda longa) e do **Modelo de Watts-Strogatz** (alta transitividade local e caminhos curtos).
 
 ![Análise de Lei de Potência](lei_potencia.png)
